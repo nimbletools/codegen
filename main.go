@@ -129,7 +129,7 @@ func main() {
 		return
 	}
 
-	log.Info("Parsing %s to %s", fnm, fnmOutput)
+	log.Info("Parsing %s", fnm)
 
 	scanState = &ScanState{}
 	scanState.Init()
@@ -160,4 +160,6 @@ func main() {
 			}
 		}
 	}
+
+	writeResults(fnm, fnmOutput)
 }
